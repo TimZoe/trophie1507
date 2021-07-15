@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "trophie15073795ec9e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-trophie1507-dev-85208-authRole",
+      "UnauthRoleArn": "arn:aws:iam::537184948641:role/amplify-trophie1507-dev-85208-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::537184948641:role/amplify-trophie1507-dev-85208-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-trophie1507-dev-85208-deployment",
+      "UnauthRoleName": "amplify-trophie1507-dev-85208-unauthRole",
+      "StackName": "amplify-trophie1507-dev-85208",
+      "StackId": "arn:aws:cloudformation:eu-central-1:537184948641:stack/amplify-trophie1507-dev-85208/2f1cdf50-e539-11eb-8005-0a1845e886b6",
+      "AmplifyAppId": "dken0uprntt41"
+    },
+    "categories": {
+      "auth": {
+        "trophie15073795ec9e": {}
+      }
+    }
+  }
+}
