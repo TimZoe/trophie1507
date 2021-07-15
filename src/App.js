@@ -1,9 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
         <p>
          Trophie1507 mit terminal
         </p>
-        <AmplifySignOut />
+
 
      
       </header>
@@ -21,4 +19,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+export default App;
