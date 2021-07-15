@@ -1,8 +1,9 @@
-import './LogIn.css';
+import './register.css';
 import trophieLogoQu from './assets/TrophieLogoQu.png'
 import {Route, Link} from "react-router-dom";
 
-function logIn() {
+
+function register() {
   return (
     <div className="App">
      
@@ -14,9 +15,9 @@ function logIn() {
         </div>
 
         <div class="registerWrapper">
-            Bitte einLoggen
-
-                <div class="awsInput">
+            Bitte registrieren
+        </div>
+        <div class="awsInput">
 
                     Hier kommt aws Content
                     
@@ -28,9 +29,6 @@ function logIn() {
                     
 
                 </div>
-
-        </div>
-
      </div>
 
             
@@ -39,4 +37,4 @@ function logIn() {
   );
 }
 
-export default logIn;
+export default register;

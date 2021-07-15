@@ -1,2 +1,60 @@
 AKIAX2EVX2GQ3WD56DMY
 zqV90Y9oVKHm7ydQvKk6z4zuiaxz1j7wCKg2K2Lt
+
+
+
+import logo from './logo.svg';
+import trophieLogo from './assets/trophieLogo.png';
+import buttonImg from './assets/buttonImg.png';
+import './Home.css';
+import {Route, Link} from "react-router-dom";
+
+
+function Home() {
+  return (
+    <div className="App">
+     
+     <div id="mobileWrapper">
+
+
+         
+     </div>
+
+            
+      
+    </div>
+  );
+}
+
+export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ab hier hide -> größer als mobile  */
+@media (min-width: 800px) { 
+
+
+    #mobileWrapper {
+
+        display:none;
+    }
+ 
+
+ }

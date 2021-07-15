@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-#mobileWrapperLog {
+#mobileWrapperreg {
 
     display:flex;
     flex-direction: column;
@@ -36,34 +36,6 @@
     padding-right: 8vw;
 }
 
-.awsInput {
-
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    width: 75%;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-
-}
-
-
-.weiterButton {
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    background-color: rgb(195,235,239) ;
-    flex-direction: row;
-    width:50%;
-    margin-top:5vh;
-}
 
 
 
@@ -76,7 +48,7 @@
 @media (min-width: 800px) { 
 
 
-    #mobileWrapperLog {
+    #mobileWrapperreg {
 
         display:none;
     }

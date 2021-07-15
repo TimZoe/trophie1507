@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+a:link {
+
+    text-decoration: none;
+}
    #mobileWrapper {
 
     display:flex;
@@ -7,11 +11,12 @@
     justify-content: center;
     width:100%;
     position: relative;
-    background-image: url(./assets/trophieLogo.png);
+    background-image: url(./assets/bgBild.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height:100%;
     
 }
 
@@ -27,19 +32,25 @@
 }
 #welcome {
     color:white;
-    font-size: 8vw;
-    font-weight: 700;
+    font-size: 9vw;
+    font-weight: 800;
     font-family: Montserrat;
     
 
 }
 #TrophieLogo {
 
+    width:80%;
+    margin-top: -8vh;
+    margin-bottom: -8vh;
+    margin-left: 7vw;
+    
+
 }
 #CLYFM {
     color:white;
     font-size: 5vw;
-    font-weight: 600;
+    font-weight: 700;
     font-family: Montserrat;
 
 }
@@ -48,7 +59,7 @@
     width:100%;
     display:flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     
 
 }
@@ -64,17 +75,22 @@
     padding-right: 3vw;
     background-color: white;
     border-radius: 2vw;
-    align-content: center;
+    align-items: center;
     margin-bottom: 2vh;
+    a:link
+    
 }
 .buttonText {
     color:black;
     font-size: 4vw;
     font-weight: 600;
     font-family: Montserrat;
+    text-decoration: none;
 
 }
 #buttonImg {
+
+    height:50%;
 
 }
 
