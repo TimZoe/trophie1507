@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-         Trophie1507 mit terminal
+         Trophie1507 mit terminalx
         </p>
 
 
