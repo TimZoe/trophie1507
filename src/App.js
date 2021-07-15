@@ -1,31 +1,19 @@
-import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Amplify from 'aws-amplify';
-import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
-import awsconfig from './aws-exports';
+import Home from './Home';
+import {Route, Link} from "react-router-dom";
 
-Amplify.configure(awsconfig);
+function App() {
+  return (
+    <div className="App">
+  
+      <Route exact path="/" component={Home} />
 
-const AuthStateApp = () => {
-    const [authState, setAuthState] = React.useState();
-    const [user, setUser] = React.useState();
 
-    React.useEffect(() => {
-        return onAuthUIStateChange((nextAuthState, authData) => {
-            setAuthState(nextAuthState);
-            setUser(authData)
-        });
-    }, []);
+     
 
-  return authState === AuthState.SignedIn && user ? (
-      <div className="App">
-          <div>Hello, {user.username}</div>
-          <AmplifySignOut />
-      </div>
-    ) : (
-      <AmplifyAuthenticator />
+    </div>
   );
 }
 
-export default AuthStateApp;
+export default App;
