@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import Amplify from 'aws-amplify';
+import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+import awsconfig from './aws-exports';
 
+Amplify.configure(awsconfig);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Trophie1507 mit terminalx
-        </p>
+const AuthStateApp = () => {
+    const [authState, setAuthState] = React.useState();
+    const [user, setUser] = React.useState();
 
+    React.useEffect(() => {
+        return onAuthUIStateChange((nextAuthState, authData) => {
+            setAuthState(nextAuthState);
+            setUser(authData)
+        });
+    }, []);
 
-     
-      </header>
-    </div>
+  return authState === AuthState.SignedIn && user ? (
+      <div className="App">
+          <div>Hello, {user.username}</div>
+          <AmplifySignOut />
+      </div>
+    ) : (
+      <AmplifyAuthenticator />
   );
 }
 
-export default App;
+export default AuthStateApp;
